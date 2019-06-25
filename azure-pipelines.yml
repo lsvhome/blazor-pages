@@ -29,18 +29,3 @@ steps:
   inputs:
     pathtoPublish: $(Build.ArtifactStagingDirectory)/Client
     artifactName: 'Dist'
-
-- script: |
-    git config --global user.name "$NAME"
-    git config --global user.email "$EMAIL"
-    cd $(Build.ArtifactStagingDirectory)/Client/Client/dist
-    git init
-    git checkout -b gh-pages
-    git add -A
-    git commit -m "Create build $(Build.BuildId)"
-    git push -f https://$PAT@github.com/lsvhome/blazor-pages.git gh-pages
-  displayName: 'Publish to GitHub Pages'
-  env:
-    PAT: $(GitHubPAT)
-    NAME: $(GitHubName)
-    EMAIL: $(GitHubEmail)
