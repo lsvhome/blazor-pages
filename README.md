@@ -5,7 +5,7 @@
 This project is an example of using Azure Pipelines to automatically deploy a client-side
 Blazor app to Github Pages. For a live demo, check the following link:
 
-https://fernando.andreu.info/blazor-pages/
+[https://lsvhome.github.io/blazor-pages]https://lsvhome.github.io/blazor-pages/
 
 Microsoft Docs already contains a [general overview](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/blazor/client-side?view=aspnetcore-3.0#github-pages)
 of the steps needed for a successful deploy, including an example of the final result 
